@@ -24,9 +24,74 @@ switch ($page) {
         (new AdminController())->dashboard();
         break;
 
-    case 'produtos':
+    case 'admin-produtos':
         require "../controllers/ProdutoController.php";
-        (new ProdutoController())->listar();
+        (new ProdutoController())->listarAdmin();
+        break;
+
+    case 'admin-categorias':
+        require "../controllers/CategoriaController.php";
+        (new CategoriaController())->listarAdmin();
+        break;
+
+    case 'cadProd':
+        require "../controllers/ProdutoController.php";
+        (new ProdutoController())->criarAdmin();
+        break;
+
+    case 'salvarProd':
+        require "../controllers/ProdutoController.php";
+        (new ProdutoController())->salvarAdmin();
+        break;
+
+    case 'editProd':
+        require "../controllers/ProdutoController.php";
+        (new ProdutoController())->editarAdmin($_GET['id'] ?? null);
+        break;
+
+    case 'atualizarProd':
+        require "../controllers/ProdutoController.php";
+        (new ProdutoController())->atualizarAdmin();
+        break;
+
+    case 'excluirProd':
+        require "../controllers/ProdutoController.php";
+        (new ProdutoController())->excluirAdmin($_GET['id'] ?? null);
+        break;
+
+    case 'cadCat':
+        require "../controllers/CategoriaController.php";
+        (new CategoriaController())->criarAdmin();
+        break;
+
+    case 'salvarCat':
+        require "../controllers/CategoriaController.php";
+        (new CategoriaController())->salvarAdmin();
+        break;
+
+    case 'editCat':
+        require "../controllers/CategoriaController.php";
+        (new CategoriaController())->editarAdmin($_GET['id'] ?? null);
+        break;
+
+    case 'atualizarCat':
+        require "../controllers/CategoriaController.php";
+        (new CategoriaController())->atualizarAdmin();
+        break;
+
+    case 'excluirCat':
+        require "../controllers/CategoriaController.php";
+        (new CategoriaController())->excluirAdmin($_GET['id'] ?? null);
+        break;
+
+    case 'admin-pedidos':
+        require "../controllers/PedidoController.php";
+        (new PedidoController())->listarAdmin();
+        break;
+
+    case 'logout':
+        require "../controllers/AdminController.php";
+        (new AdminController())->logout();
         break;
 }
 ?>

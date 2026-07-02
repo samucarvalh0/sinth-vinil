@@ -31,5 +31,10 @@ class Auth
 
         }
     }
+
+    public static function id()
+    {
+        return $_SESSION['usuario']['id'] ?? null;
+    }
 }
 ?>

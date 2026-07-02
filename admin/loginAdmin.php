@@ -1,6 +1,6 @@
 <?php require __DIR__ . "/include/header.php"; ?>
 
-<main>
+<main style="background: #212529; height: 100vh; display: flex; justify-content: center; align-items: center;">
     <div class="card login-card">
 
         <div class="card-body p-5">

@@ -1,6 +1,6 @@
 <?php
 
-define("BASE_URL", "http://localhost/VinilStore/");
+define("BASE_URL", "http://localhost/vinilstore/");
 
 define("SITE_NAME", "VinilStore");
 ?>

@@ -36,6 +36,22 @@ class AdminController
     {
         Auth::requireAdmin();
 
+        require_once __DIR__ . "/../models/Produtos.php";
+        require_once __DIR__ . "/../models/Categoria.php";
+        require_once __DIR__ . "/../models/Usuario.php";
+        require_once __DIR__ . "/../models/Pedido.php";
+
+        $produtoModel = new Produto();
+        $categoriaModel = new Categoria();
+        $usuarioModel = new Usuario();
+        $pedidoModel = new Pedido();
+
+        $totalProdutos = $produtoModel->contar();
+        $totalCategorias = $categoriaModel->contar();
+        $totalUsuarios = $usuarioModel->contar();
+        $totalPedidos = $pedidoModel->contar();
+        $ultimosPedidos = $pedidoModel->listarUltimos(5);
+
         require __DIR__ . "/../admin/dashboard.php";
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once "models/Pedido.php";
+require_once __DIR__ . "/../models/Pedido.php";
 
 class PedidoController
 {
@@ -35,6 +35,15 @@ class PedidoController
         $pedidos = $this->pedido->listar(Auth::id());
 
         require "views/meus-pedidos.php";
+    }
+
+    public function listarAdmin()
+    {
+        Auth::requireAdmin();
+
+        $pedidos = $this->pedido->listar();
+
+        require __DIR__ . "/../admin/listPed.php";
     }
 
 }
