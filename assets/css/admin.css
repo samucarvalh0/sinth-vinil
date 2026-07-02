@@ -1,0 +1,33 @@
+.sidebar{
+
+    width:260px;
+    min-height:100vh;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    overflow-y:auto;
+
+}
+
+.sidebar .nav-link{
+
+    padding:15px 25px;
+    transition:.3s;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:#343a40;
+    padding-left:35px;
+
+}
+
+.main-content{
+
+    margin-left:260px;
+    padding:30px;
+
+}
