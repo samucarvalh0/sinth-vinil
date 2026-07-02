@@ -1,7 +1,6 @@
-<?php require "admin/includes/sidebar.php"; ?>
-<?php require "admin/include/header.php"; ?>
+<?php require __DIR__ . "/include/header.php"; ?>
 
-<div class="main-content">
+<main>
     <div class="card login-card">
 
         <div class="card-body p-5">
@@ -28,7 +27,7 @@
                         Login
                     </label>
 
-                    <input type="text" name="login" class="form-control" placeholder="Digite seu login" required>
+                    <input type="text" name="usuario" class="form-control" placeholder="Digite seu login" required>
 
                 </div>
 
@@ -52,20 +51,10 @@
 
             </form>
 
-            <hr>
-
-            <div class="text-center">
-
-                <a href="../index.php" class="text-decoration-none">
-                    ← Voltar para a loja
-                </a>
-
-            </div>
-
         </div>
 
     </div>
-</div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</main>

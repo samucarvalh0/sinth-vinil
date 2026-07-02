@@ -26,7 +26,7 @@ class Auth
     {
         if (!self::admin()) {
 
-            header("Location:?page=admin-login");
+            header("Location:?page=login");
             exit;
 
         }

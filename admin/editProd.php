@@ -1,5 +1,5 @@
-<?php require "admin/includes/sidebar.php"; ?>
-<?php require "admin/include/header.php"; ?>
+<?php require __DIR__ . "/include/sidebar.php"; ?>
+<?php require __DIR__ . "/include/header.php"; ?>
 
 <div class="main-content">
 

@@ -14,7 +14,7 @@ class AdminController
 
     public function login()
     {
-        require "admin/login.php";
+        require __DIR__ . "/../admin/loginAdmin.php";
     }
 
     public function autenticar()
@@ -29,21 +29,21 @@ class AdminController
             exit;
         }
 
-        header("Location: ?page=admin-login");
+        header("Location: ?page=login");
     }
 
     public function dashboard()
     {
         Auth::requireAdmin();
 
-        require "admin/dashboard.php";
+        require __DIR__ . "/../admin/dashboard.php";
     }
 
     public function logout()
     {
         unset($_SESSION['admin']);
 
-        header("Location: ?page=admin-login");
+        header("Location: ?page=login");
         exit;
     }
 

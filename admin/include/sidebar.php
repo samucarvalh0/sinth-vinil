@@ -37,20 +37,6 @@
             </a>
         </li>
 
-        <li class="nav-item">
-            <a href="?page=admin-clientes" class="nav-link text-white">
-                <i class="bi bi-people-fill me-2"></i>
-                Clientes
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a href="?page=home" class="nav-link text-white">
-                <i class="bi bi-house-door-fill me-2"></i>
-                Voltar para a Loja
-            </a>
-        </li>
-
         <li class="nav-item mt-4">
             <a href="?page=logout" class="nav-link text-danger">
                 <i class="bi bi-box-arrow-right me-2"></i>
